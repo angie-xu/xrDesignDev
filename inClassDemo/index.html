@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <title>Basic JavaScript</title>
+    <style>
+      h1 {cursor:  crosshair; }
+    </style>
+  </head>
+
+  <body>
+    <h1 onclick="displayMessage()">Greetings!</h1>
+    <div id="message"></div>
+
+    <script>
+    function displayMessage() {
+      alert("Hello World! " + "today is " + Date());
+      document.getElementbyId("message").innerHTML= "Hello World! "
+ + "Today is " + Date();
+    }
+    </script>
+  </body>
+  </html>
