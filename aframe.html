@@ -15,6 +15,7 @@
         <img id="skyTexture"
           src="img/hotel_room.jpg">
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+        <a-asset-item id="laptop" src="img/laptop/scene.gltf"></a-asset-item>
 
       </a-assets>
 
@@ -26,7 +27,15 @@
       <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
     position="-3 1 -4"></a-sound>
 
-    <a-asset-item id="character" src="img/laptop/scene.gltf"></a-asset-item>
+    <a-gltf-model src="#laptop"
+      position="0 1 -4"
+      scale="2 2 2"
+      animation="property: object3D.position.y;
+        to: 1.5;
+        dir: alternate;
+        dur: 5000;
+        loop: true">
+    </a-gltf-model>
 
       <a-box
         src="#boxTexture"
@@ -44,8 +53,8 @@
 
       <a-sky src="#skyTexture"></a-sky>
 
-      <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
-        repeat="10 10"></a-plane>
+      <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
+        repeat="10 10"></a-plane> -->
 
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="2" position="2 4 4"></a-light>
