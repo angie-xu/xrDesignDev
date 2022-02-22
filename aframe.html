@@ -18,7 +18,7 @@
         <a-asset-item id="laptop" src="img/laptop/scene.gltf"></a-asset-item>
         <a-asset-item id="keys" src="img/keys/scene.gltf"></a-asset-item>
         <a-asset-item id="covid" src="img/covid/scene.gltf"></a-asset-item>
-        <a-asset-item id="mask" src="img/mask/scene.gltf"></a-asset-item>
+        <a-asset-item id="mask" src="img/face_masks/scene.gltf"></a-asset-item>
 
 
 
@@ -53,7 +53,13 @@
       animation__position="property: object3D.position.y; to: 3.5; dir: alternate; dur: 5000; loop: true">
     </a-gltf-model>
 
-    
+    <a-gltf-model src="#mask"
+      position="-80 -45 -12"
+      scale="4 4 4"
+      rotation="0 -45"
+      animation__mouseenter="property: scale; to: 6 6 6; dur: 300; startEvents: mouseenter"
+      animation__mouseleave="property: scale; to: 4 4 4; dur: 300; startEvents: mouseleave">
+    </a-gltf-model>
 
       <!-- <a-box
         src="#boxTexture"

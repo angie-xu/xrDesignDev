@@ -1,0 +1,11 @@
+Model Information:
+* title:	Face mask box
+* source:	https://sketchfab.com/3d-models/face-mask-box-db16f44688d0405c9c7b87af61ea7701
+* author:	marceligadalski (https://sketchfab.com/marceligadalski)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Face mask box" (https://sketchfab.com/3d-models/face-mask-box-db16f44688d0405c9c7b87af61ea7701) by marceligadalski (https://sketchfab.com/marceligadalski) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
