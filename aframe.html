@@ -17,6 +17,7 @@
         <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
         <a-asset-item id="laptop" src="img/laptop/scene.gltf"></a-asset-item>
         <a-asset-item id="keys" src="img/keys/scene.gltf"></a-asset-item>
+        <a-asset-item id="wallet" src="img/wallet/scene.gltf"></a-asset-item>
         <a-asset-item id="covid" src="img/covid/scene.gltf"></a-asset-item>
         <a-asset-item id="mask" src="img/face_masks/scene.gltf"></a-asset-item>
 
@@ -29,22 +30,36 @@
       preload></audio> -->
 
       <!-- Sound when you approach -->
-      <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
-    position="-3 1 -4"></a-sound>
 
     <a-gltf-model src="#laptop"
       position="-15 -15 -33"
       scale="0.006 0.006 0.006"
       rotation="0 -10">
     </a-gltf-model>
+    <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+  position="-3 1 -4"></a-sound>
 
     <a-gltf-model src="#keys"
       position="20 -20 10"
       scale="0.5 0.5 0.5"
-      rotation="0 40"
+      rotation="0 180"
       animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
       animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave">
     </a-gltf-model>
+
+    <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+  position="-3 1 -4"></a-sound>
+
+  <a-gltf-model src="#wallet"
+    position="40 -60 -30"
+    scale="0.4 0.4 0.4"
+    rotation="90 30"
+    animation__mouseenter="property: scale; to: 2 2 2; dur: 300; startEvents: mouseenter"
+    animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave">
+  </a-gltf-model>
+
+  <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+position="-3 1 -4"></a-sound>
 
     <a-gltf-model src="#covid"
       position="-40 -10 -35"
@@ -53,13 +68,19 @@
       animation__position="property: object3D.position.y; to: 3.5; dir: alternate; dur: 5000; loop: true">
     </a-gltf-model>
 
+    <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+  position="-3 1 -4"></a-sound>
+
     <a-gltf-model src="#mask"
       position="-80 -45 -12"
       scale="4 4 4"
       rotation="0 -45"
-      animation__mouseenter="property: scale; to: 6 6 6; dur: 300; startEvents: mouseenter"
+      animation__mouseenter="property: scale; to: 7 7 7; dur: 300; startEvents: mouseenter"
       animation__mouseleave="property: scale; to: 4 4 4; dur: 300; startEvents: mouseleave">
     </a-gltf-model>
+
+    <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true"
+  position="-3 1 -4"></a-sound>
 
       <!-- <a-box
         src="#boxTexture"
