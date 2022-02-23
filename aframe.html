@@ -21,8 +21,6 @@
         <a-asset-item id="covid" src="img/covid/scene.gltf"></a-asset-item>
         <a-asset-item id="mask" src="img/face_masks/scene.gltf"></a-asset-item>
 
-
-
       </a-assets>
 
       <!-- Sound in general -->
@@ -38,7 +36,12 @@
     </a-gltf-model>
 
     <a-sound src="audio/Question1.mp3" autoplay="true"
-  position="-15 -15 -33"></a-sound>
+      loop="true"
+      position="-15 -15 -33"
+      volume="3"
+      refDistance="3"
+      rolloffFactor="1">
+    </a-sound>
 
     <a-gltf-model src="#keys"
       position="20 -20 10"
@@ -49,7 +52,11 @@
     </a-gltf-model>
 
     <a-sound src="audio/Question5.mp3" autoplay="true"
-  position="20 -20 10"></a-sound>
+        loop="true"
+        position="20 -20 10"
+        volume="5"
+        rolloffFactor="1">
+    </a-sound>
 
   <a-gltf-model src="#wallet"
     position="40 -60 -30"
@@ -60,7 +67,11 @@
   </a-gltf-model>
 
   <a-sound src="audio/Question2.mp3" autoplay="true"
-position="40 -60 -30"></a-sound>
+    loop="true"
+    position="40 -60 -30"
+    volume="5"
+    rolloffFactor="1">
+  </a-sound>
 
     <a-gltf-model src="#covid"
       position="-40 -10 -35"
@@ -70,7 +81,11 @@ position="40 -60 -30"></a-sound>
     </a-gltf-model>
 
     <a-sound src="audio/Question3.mp3" autoplay="true"
-  position="-40 -10 -35"></a-sound>
+      loop="true"
+      position="-40 -10 -35"
+      volume="3"
+      rolloffFactor="1">
+    </a-sound>
 
     <a-gltf-model src="#mask"
       position="-80 -45 -12"
@@ -81,7 +96,11 @@ position="40 -60 -30"></a-sound>
     </a-gltf-model>
 
     <a-sound src="audio/Question4.mp3" autoplay="true"
-  position="-80 -45 -12"></a-sound>
+      loop="true"
+      position="-80 -45 -12"
+      volume="5"
+      rolloffFactor="1">
+    </a-sound>
 
       <!-- <a-box
         src="#boxTexture"
