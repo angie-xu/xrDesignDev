@@ -21,6 +21,13 @@
         <a-asset-item id="covid" src="img/covid/scene.gltf"></a-asset-item>
         <a-asset-item id="mask" src="img/face_masks/scene.gltf"></a-asset-item>
 
+        <a-sound id="Q1" src="audio/Question1.mp3"></a-sound>
+        <a-sound id="Q2" src="audio/Question2.mp3"></a-sound>
+        <a-sound id="Q3" src="audio/Question3.mp3"></a-sound>
+        <a-sound id="Q4" src="audio/Question4.mp3"></a-sound>
+        <a-sound id="Q5" src="audio/Question5.mp3"></a-sound>
+
+
       </a-assets>
 
       <!-- Sound in general -->
@@ -32,75 +39,74 @@
     <a-gltf-model src="#laptop"
       position="-15 -15 -33"
       scale="0.006 0.006 0.006"
-      rotation="0 -10">
+      rotation="0 -10"
+      sound="src: #Q1;
+      on: mouseenter;
+      volume: 100">
     </a-gltf-model>
 
-    <a-sound src="audio/Question1.mp3" autoplay="true"
+    <!-- <a-sound src="audio/Question1.mp3" autoplay="true"
       loop="true"
       position="-15 -15 -33"
-      volume="3"
-      refDistance="3"
-      rolloffFactor="1">
-    </a-sound>
+      volume="100">
+    </a-sound> -->
 
     <a-gltf-model src="#keys"
       position="20 -20 10"
       scale="0.5 0.5 0.5"
       rotation="0 180"
       animation__mouseenter="property: scale; to: 3 3 3; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave">
+      animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave"
+      sound="src: #Q5;
+      on: mouseenter;
+      volume: 100">
     </a-gltf-model>
-
-    <a-sound src="audio/Question5.mp3" autoplay="true"
-        loop="true"
-        position="20 -20 10"
-        volume="5"
-        rolloffFactor="1">
-    </a-sound>
 
   <a-gltf-model src="#wallet"
     position="40 -60 -30"
     scale="0.4 0.4 0.4"
     rotation="90 30"
     animation__mouseenter="property: scale; to: 2 2 2; dur: 300; startEvents: mouseenter"
-    animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave">
+    animation__mouseleave="property: scale; to: 0.5 0.5 0.5; dur: 300; startEvents: mouseleave"
+    sound="src: #Q2;
+    on: mouseenter;
+    volume: 100">
   </a-gltf-model>
-
-  <a-sound src="audio/Question2.mp3" autoplay="true"
-    loop="true"
-    position="40 -60 -30"
-    volume="5"
-    rolloffFactor="1">
-  </a-sound>
 
     <a-gltf-model src="#covid"
       position="-40 -10 -35"
       rotation="0 45 45"
       scale="0.20 0.20 0.20"
-      animation__position="property: object3D.position.y; to: 3.5; dir: alternate; dur: 5000; loop: true">
+      animation__position="property: object3D.position.y; to: 3.5; dir: alternate; dur: 5000; loop: true"
+      sound="src: #Q3;
+      on: mouseenter;
+      volume: 100">
     </a-gltf-model>
 
-    <a-sound src="audio/Question3.mp3" autoplay="true"
+    <!-- <a-sound src="audio/Question3.mp3" autoplay="true"
       loop="true"
       position="-40 -10 -35"
       volume="3"
       rolloffFactor="1">
-    </a-sound>
+    </a-sound> -->
 
     <a-gltf-model src="#mask"
       position="-80 -45 -12"
       scale="4 4 4"
       rotation="0 -45"
-      animation__mouseenter="property: scale; to: 7 7 7; dur: 300; startEvents: mouseenter"
-      animation__mouseleave="property: scale; to: 4 4 4; dur: 300; startEvents: mouseleave">
+      animation__mouseenter="property: scale; to: 10 10 10; dur: 300; startEvents: mouseenter"
+      animation__mouseleave="property: scale; to: 4 4 4; dur: 300; startEvents: mouseleave"
+      sound="src: #Q4;
+      on: mouseenter;
+      volume: 100">
     </a-gltf-model>
 
-    <a-sound src="audio/Question4.mp3" autoplay="true"
+    <!-- <a-sound src="audio/Question4.mp3" autoplay="true"
       loop="true"
       position="-80 -45 -12"
       volume="5"
       rolloffFactor="1">
-    </a-sound>
+    </a-sound> -->
 
       <!-- <a-box
         src="#boxTexture"
@@ -122,9 +128,9 @@
       <!-- <a-plane src="#groundTexture" rotation="-90 0 0" width="30" height="30"
         repeat="10 10"></a-plane> -->
 
-      <a-light type="ambient" color="#445451"></a-light>
-      <a-light type="point" intensity="2" position="2 4 4"></a-light>
-
+      <!-- <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light> -->
+    </a-scene>
 
       <script>
         AFRAME.registerComponent('scale-on-mouseenter', {
@@ -140,6 +146,13 @@
             });
           }
         });
+
+        function mouseenter(soundobj) {
+            var thissound=document.getElementById(soundobj);
+            thissound.play();
+              el.thissound.pause();
+              thissound.currentTime = 0;
+        }
       </script>
   </body>
 </html>
