@@ -2,175 +2,93 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>XR Design & Development</title>
+    <title>Angie</title>
+    <link rel="stylesheet" href="index_styles.css">
   </head>
-  <style>
-  @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;0,700;1,600;1,700&family=Eczar:wght@400;500;600;700;800&family=Quintessential&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&display=swap');
-
-  body {
-    margin: 0px auto;
-    background-color: #BDEDFF;
-    /* background-image: url(img/totoronfren.png);
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-attachment: fixed;
-    background-size: 300px; */
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    font-family: 'Cormorant';
-  }
-
-  h2 {
-    color: #BDEDFF;
-  }
-
-  .header {
-    width:100%;
-  }
-
-  .menu {
-    font-family: 'Cormorant';
-    font-weight: bold 700;
-  }
-
-  .sidebar {
-    width: 150px;
-    padding-top: 50px;
-    box-sizing: border-box;
-  }
-
-  .wrapper {
-    display: grid;
-    /* background-color: yellow; */
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "nav1 nav1"
-      "nav2 sidebar";
-    gap: 20px 20px;
-    padding-bottom: 20px;
-  }
-
-  .cells {
-    border-radius:0.5em;
-  }
-
-  h1 {
-    font-family: 'Eczar';
-  }
-
-  h2 {
-    font-family: 'Eczar';
-    font-weight: 600;
-  }
-
-  .main a {
-    text-decoration: none;
-    color: #373737;
-    padding-left: 30px;
-  }
-
-  #item1 {
-    grid-area: nav1;
-    background-color: #B2D6FF;
-  }
-
-  #item2 {
-    grid-area: nav2;
-    background-color: #ADDFFF;
-    color: #3085BD;
-    justify-self: end;
-    width: 75%;
-    padding: 25px;
-    box-sizing: border-box;
-  }
-
-  #item3 {
-    grid-area: sidebar;
-    background-color: white;
-    color: black;
-    justify-self: start;
-    width: 85%;
-    text-align: left;
-    padding: 0px 20px;
-  }
-
-  /*item1 styling*/
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: white;
-  }
-
-  li {
-    float: left;
-  }
-
-  li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #EEF4F5;
-  }
-
-  .active {
-    background-color: #EEF4F5;
-  }
-
-  p {
-    font-family: 'Cormorant';
-    font-weight: 500;
-    line-height: normal;
-  }
-
-</style>
 
   <body>
-    <img class="header" src="img/abstract-polygonal-banner-background.jpg">
+  <div class="rectangle">
 
-    <div class="wrapper">
 
-      <div id="item1" class="cells">
-        <ul class="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#exercises">Exercises</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li style="float:right"><a class="active" href="https://xrdesigndev.wordpress.com/">Blog</a></li>
+    <div class='menu-container'>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li class="projects"><a href="projects.html">PROJECTS</a>
+        <ul>
+          <li class="sub"><a href="aframe.html">A-Frame</a></li>
+          <li class="sub"><a href="#">Spark AR</a></li>
         </ul>
-      </div>
-
-      <div id="item2" class="cells">
-        <section id="about">
-          <img class="sidebar" src="img/data-circle.png" alt="star">
-          <p style="border-style:solid; border-color:#FFFFFF; padding: 1em;">Page dedicated to MEDP 29920 Spring 2022</p>
-
-        </section>
-      </div>
-
-      <div id="item3" class="cells main">
-        <h1>XR Design & Development</h1>
-        <hr>
-        <section id="exercises">
-          <h2>Exercises</h2>
-          <p><a href="demo01.html">A-Frame Demo</a></p>
-        </section>
-
-        <section id="projects">
-          <h2>Projects</h2>
-          <p><a href="aframe.html">A-Frame Project</a></p>
-        </section>
-
-      </div>
-
+      </li>
+      <li id="title"><a href="index.html">Angie Xu</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="https://xrdesigndev.wordpress.com/">BLOG</a></li>
+    </ul>
     </div>
 
+    <br>
+    <div class="img-container">
+      <img src="img/water.png" alt="blurred" style="width:90%">
+      <div class="centered">XR DESIGN & DEVELOPMENT</div>
+    </div>
+
+    <div class="sub-container">
+        <div class='grid'>
+          <div class='item'>
+            <figure>
+
+              <div class="img-overlay-wrap">
+                <a href="about.html">
+                  <img class="about" src='img/about.png'/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50 " height="50" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                </a>
+              </div>
+              <figcaption>
+                <p><a href="about.html">About</a></p>
+              </figcaption>
+            </figure>
+
+          </div>
+          <div class='item'>
+            <figure>
+              <div class="img-overlay-wrap">
+                <a href="projects.html">
+                  <img class="project" src='img/projects.png'/>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
+                    <path d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"/>
+                  </svg>
+                </a>
+              </div>
+              <figcaption>
+                <p><a href="projects.html">Projects</a></p>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class='item'>
+            <figure>
+              <div class="img-overlay-wrap">
+              <a href="https://xrdesigndev.wordpress.com/">
+                <img class="blog" src='img/blog.png'/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                  <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                  <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                </svg>
+              </a>
+            </div>
+              <figcaption>
+                <p><a href="https://xrdesigndev.wordpress.com/">Blog</a></p>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+
+
+  </div>
   </body>
+
 </html>

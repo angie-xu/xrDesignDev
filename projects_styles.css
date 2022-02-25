@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&family=Unna:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 200;
+  background-color: #52595D;
+}
+
+.rectangle {
+  height: 100vh;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+
+}
+
+ #about{
+  background-color: white;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+ul li{
+  float: left;
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+}
+
+ul li a{
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+ul li a:hover{
+  color: #C9C0BB;
+}
+
+ul li ul li{
+  display: none;
+}
+
+ul li:hover ul li{
+  display: block;
+}
+
+.projects{
+  z-index: 1;
+  position: relative;
+}
+
+.sub a:hover{
+  background-color: #F5F5F5;
+}
+
+#title{
+  font-family: 'Unna', serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  color: #704f4c;
+  padding: 5px 0;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+div.gallery {
+  margin: 20px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.box1 {
+  margin-left: 39px;
+}
+
+div a{
+  text-decoration: none;
+  font-family: 'Montserrat';
+  color: black;
+}
