@@ -7,7 +7,7 @@ body {
 }
 
 .rectangle {
-  height: 100vh;
+  height: 200vh;
   width: 80%;
   background-color: white;
   margin: auto;
@@ -80,10 +80,10 @@ ul li:hover ul li{
   justify-content: center;
   color: #704f4c;
   padding: 5px 0;
-  padding-left: 200px;
-  padding-right: 200px;
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 20px;
+  width: 900px;
 }
 
 div.gallery {
@@ -119,4 +119,9 @@ div.gallery a{
 
 h3{
   margin-left: 40px;
+}
+
+.files {
+  position: relative;
+  padding-left: 100px;
 }

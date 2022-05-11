@@ -80,11 +80,12 @@ ul li:hover ul li{
   justify-content: center;
   color: #704f4c;
   padding: 5px 0;
-  padding-left: 200px;
-  padding-right: 200px;
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 20px;
+  width: 900px;
 }
+
 
 .img-container {
   position: relative;
